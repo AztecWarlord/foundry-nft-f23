@@ -1,44 +1,162 @@
-data:image/svg+xml;base64,
-PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRw
-Oi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCI+Cjx0ZXh0
-IHg9IjAiIHk9IjE1IiBmaWxsPSJibGFjayI+SGkhIFlvdXIgYnJvd3NlciBkZWNvZGVkIHRoaXM8
-L3RleHQ+Cjwvc3ZnPg==
+# Foundry NFT
 
-HappySvg:
-data:image/svg+xml;base64,
-PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgd2lkdGg9IjQwMCIgIGhlaWdodD0iNDAwIiB4bWxu
-cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjEw
-MCIgZmlsbD0ieWVsbG93IiByPSI3OCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIzIi8+
-CiAgPGcgY2xhc3M9ImV5ZXMiPgogICAgPGNpcmNsZSBjeD0iNjEiIGN5PSI4MiIgcj0iMTIiLz4K
-ICAgIDxjaXJjbGUgY3g9IjEyNyIgY3k9IjgyIiByPSIxMiIvPgogIDwvZz4KICA8cGF0aCBkPSJt
-MTM2LjgxIDExNi41M2MuNjkgMjYuMTctNjQuMTEgNDItODEuNTItLjczIiBzdHlsZT0iZmlsbDpu
-b25lOyBzdHJva2U6IGJsYWNrOyBzdHJva2Utd2lkdGg6IDM7Ii8+Cjwvc3ZnPg==
+A Solidity / Foundry project featuring two ERC-721 NFT contracts built as part of the [Cyfrin Foundry Full Course](https://github.com/Cyfrin/foundry-full-course-f23).
 
-SadSvg:
-data:image/svg+xml;base64,
-PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHdpZHRoPSIxMDI0cHgi
-IGhlaWdodD0iMTAyNHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3
-dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiMzMzMiIGQ9Ik01MTIgNjRDMjY0LjYg
-NjQgNjQgMjY0LjYgNjQgNTEyczIwMC42IDQ0OCA0NDggNDQ4IDQ0OC0yMDAuNiA0NDgtNDQ4Uzc1
-OS40IDY0IDUxMiA2NHptMCA4MjBjLTIwNS40IDAtMzcyLTE2Ni42LTM3Mi0zNzJzMTY2LjYtMzcy
-IDM3Mi0zNzIgMzcyIDE2Ni42IDM3MiAzNzItMTY2LjYgMzcyLTM3MiAzNzJ6Ii8+CiAgPHBhdGgg
-ZmlsbD0iI0U2RTZFNiIgZD0iTTUxMiAxNDBjLTIwNS40IDAtMzcyIDE2Ni42LTM3MiAzNzJzMTY2
-LjYgMzcyIDM3MiAzNzIgMzcyLTE2Ni42IDM3Mi0zNzItMTY2LjYtMzcyLTM3Mi0zNzJ6TTI4OCA0
-MjFhNDguMDEgNDguMDEgMCAwIDEgOTYgMCA0OC4wMSA0OC4wMSAwIDAgMS05NiAwem0zNzYgMjcy
-aC00OC4xYy00LjIgMC03LjgtMy4yLTguMS03LjRDNjA0IDYzNi4xIDU2Mi41IDU5NyA1MTIgNTk3
-cy05Mi4xIDM5LjEtOTUuOCA4OC42Yy0uMyA0LjItMy45IDcuNC04LjEgNy40SDM2MGE4IDggMCAw
-IDEtOC04LjRjNC40LTg0LjMgNzQuNS0xNTEuNiAxNjAtMTUxLjZzMTU1LjYgNjcuMyAxNjAgMTUx
-LjZhOCA4IDAgMCAxLTggOC40em0yNC0yMjRhNDguMDEgNDguMDEgMCAwIDEgMC05NiA0OC4wMSA0
-OC4wMSAwIDAgMSAwIDk2eiIvPgogIDxwYXRoIGZpbGw9IiMzMzMiIGQ9Ik0yODggNDIxYTQ4IDQ4
-IDAgMSAwIDk2IDAgNDggNDggMCAxIDAtOTYgMHptMjI0IDExMmMtODUuNSAwLTE1NS42IDY3LjMt
-MTYwIDE1MS42YTggOCAwIDAgMCA4IDguNGg0OC4xYzQuMiAwIDcuOC0zLjIgOC4xLTcuNCAzLjct
-NDkuNSA0NS4zLTg4LjYgOTUuOC04OC42czkyIDM5LjEgOTUuOCA4OC42Yy4zIDQuMiAzLjkgNy40
-IDguMSA3LjRINjY0YTggOCAwIDAgMCA4LTguNEM2NjcuNiA2MDAuMyA1OTcuNSA1MzMgNTEyIDUz
-M3ptMTI4LTExMmE0OCA0OCAwIDEgMCA5NiAwIDQ4IDQ4IDAgMSAwLTk2IDB6Ii8+Cjwvc3ZnPg==
+---
 
-example:
-data:image/svg+xml;base64,
-PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRw
-Oi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCI+Cjx0ZXh0
-IHg9IjAiIHk9IjE1IiBmaWxsPSJibGFjayI+SGkhIFlvdXIgYnJvd3NlciBkZWNvZGVkIHRoaXM8
-L3RleHQ+Cjwvc3ZnPg==
+## Contracts
+
+### BasicNft (`Dogie` / `DOG`)
+
+A straightforward ERC-721 where the caller supplies a token URI at mint time. The default interaction script mints a **Shiba Inu** image stored on IPFS.
+
+| Function | Description |
+|---|---|
+| `mintNft(string tokenUri)` | Mint an NFT with a custom token URI |
+| `tokenURI(uint256 tokenId)` | Returns the stored URI for a token |
+
+### MoodNft (`Mood NFT` / `MN`)
+
+A fully **on-chain** SVG NFT. Metadata and images are Base64-encoded and stored directly in the contract — no IPFS or external hosting required. Each token starts `HAPPY`; the owner can flip it to `SAD` and back.
+
+| Function | Description |
+|---|---|
+| `mintNft()` | Mint a new Mood NFT (starts HAPPY) |
+| `flipMood(uint256 tokenId)` | Toggle the mood between HAPPY 😊 and SAD 😢 |
+| `tokenURI(uint256 tokenId)` | Returns on-chain Base64-encoded JSON metadata |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- [Foundry](https://getfoundry.sh/) (`forge`, `cast`, `anvil`)
+- [Git](https://git-scm.com/)
+
+### Installation
+
+```bash
+git clone https://github.com/AztecWarlord/foundry-nft-f23
+cd foundry-nft-f23
+make install
+```
+
+### Environment Variables
+
+Create a `.env` file for testnet / mainnet deployments:
+
+```env
+PRIVATE_KEY=<your-wallet-private-key>
+SEPOLIA_RPC_URL=<your-sepolia-rpc-url>
+ETHERSCAN_API_KEY=<your-etherscan-api-key>
+```
+
+---
+
+## Usage
+
+### Build
+
+```bash
+make build
+# or
+forge build
+```
+
+### Test
+
+```bash
+make test
+# or
+forge test
+```
+
+### Format
+
+```bash
+make format
+```
+
+### Local Development (Anvil)
+
+```bash
+make anvil
+```
+
+---
+
+## Deployment
+
+### Deploy BasicNft
+
+```bash
+# Local Anvil
+make deploy
+
+# Sepolia testnet
+make deploy ARGS="--network sepolia"
+```
+
+### Deploy MoodNft
+
+```bash
+# Local Anvil
+make deployMood
+
+# Sepolia testnet
+make deployMood ARGS="--network sepolia"
+```
+
+### Mint a BasicNft
+
+```bash
+make mint
+```
+
+### Mint a MoodNft (local Anvil)
+
+```bash
+make mintMood
+```
+
+---
+
+## Project Structure
+
+```
+├── src/
+│   ├── BasicNft.sol         # Simple ERC-721 with external token URI
+│   └── MoodNft.sol          # On-chain SVG ERC-721 with flippable mood
+├── script/
+│   ├── DeployBasicNft.s.sol
+│   ├── DeployMoodNft.s.sol
+│   └── Interactions.s.sol   # MintBasicNft interaction script
+├── test/
+│   ├── unit/
+│   │   ├── BasicNftTest.t.sol
+│   │   └── MoodNft.t.sol
+│   └── integrations/
+│       ├── MoodNftIntegration.t.sol
+│       └── DeployMoodNftTest.t.sol
+└── images/
+    ├── happy.svg
+    ├── sad.svg
+    └── shiba-inu.png
+```
+
+---
+
+## Dependencies
+
+| Library | Version |
+|---|---|
+| [forge-std](https://github.com/foundry-rs/forge-std) | v1.5.3 |
+| [openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) | v4.8.3 |
+| [foundry-devops](https://github.com/Cyfrin/foundry-devops) | 0.0.11 |
+
+---
+
+## License
+
+MIT
